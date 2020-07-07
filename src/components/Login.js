@@ -31,7 +31,8 @@ export class Login extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
-      alert(`Employee ID is ${this.state.emp_id} Password is ${this.state.pwd} Date is${this.state.selectedDate}`);
+    alert(`Employee ID is ${this.state.emp_id} Password is ${this.state.pwd} Date is${this.state.selectedDate}`);
+    window.location.reload();
   }
   render() {
     return (
