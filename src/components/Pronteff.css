@@ -1,0 +1,69 @@
+.main {
+  background-color: #437082;
+  width: 300px;
+  height: 390px;
+  border-color: #437082;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.logo {
+  background: url(./images/plogo.png);
+  background-size: contain;
+  background-position: top;
+  background: cover;
+  height: 100px;
+  width: 150px;
+  background-color: #000000;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+}
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+input[type="text"],
+input[type="password"] {
+  outline: 0;
+  border-width: 0 0 2px !important;
+  border-color: #358d9c;
+  background-color: transparent !important;
+  width: 100%;
+  color: #ffffff;
+  padding-top: 30px;
+  width: 240px;
+  margin-left: 0px;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 58px;
+  opacity: 0.6;
+  padding-bottom: "10px";
+}
+input[type="submit"] {
+  background-color: #29a6b2;
+  border-color: #29a6b2;
+  border-width: 0 0 2px !important;
+  border-radius: 5px;
+  width: 245px;
+  height: 45px;
+  color: whitesmoke;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+::placeholder {
+  padding-left: 30px;
+  font-size: 16px;
+}
