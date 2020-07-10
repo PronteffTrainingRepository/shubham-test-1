@@ -48,7 +48,7 @@ a {
   color: whitesmoke;
   margin-left: 58px;
   opacity: 0.6;
-  padding-bottom: "10px";
+  padding-bottom: "5px";
 }
 input[type="submit"] {
   background-color: #29a6b2;
@@ -56,7 +56,7 @@ input[type="submit"] {
   border-width: 0 0 2px !important;
   border-radius: 5px;
   width: 245px;
-  height: 45px;
+  height: 40px;
   color: whitesmoke;
   font-size: 20px;
   margin-top: 20px;

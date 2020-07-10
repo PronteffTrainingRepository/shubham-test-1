@@ -6,14 +6,34 @@ class Pronteff extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      user: "",
+      pswd: "",
+    };
+    this.handlename = this.handlename.bind(this);
+    this.handlepass = this.handlepass.bind(this);
   }
-
+  handlename = (event) => {
+    this.setState({
+      user: event.target.value
+    });
+  };
+  handlepass = (event) => {
+    this.setState({
+      pswd: event.target.value
+    });
+  };
+  onFormSubmit = (event) => {
+    alert(`UserName :${this.state.user}.
+          Password :${this.state.pswd}`);
+    window.location.reload();
+    event.preventDefault();
+  };
   render() {
     return (
       // main div starts
       <div className="main">
-        <form>
+        <form onSubmit={this.onFormSubmit}>
           {/* Logo div starts */}
           <div className="logo"></div>
           {/* Logo div Ends */}
@@ -25,7 +45,14 @@ class Pronteff extends Component {
               aria-hidden="false"
               style={{ color: "white", opacity: "0.5" }}
             ></i>
-            <input type="text" placeholder="Username" required />
+            <input
+              type="text"
+              placeholder="Username"
+              name="user"
+              value={this.state.user}
+              onChange={this.handlename}
+              required
+            />
             {/* username Ends */}
             <br />
             {/* password starts */}
@@ -34,7 +61,14 @@ class Pronteff extends Component {
               aria-hidden="false"
               style={{ color: "white", opacity: "0.5" }}
             ></i>
-            <input type="password" placeholder="Password" required />
+            <input
+              type="password"
+              placeholder="Password"
+              name="pswd"
+              value={this.state.pswd}
+              onChange={this.handlepass}
+              required
+            />
             {/* password Ends */}
             <br />
             {/* submit button starts */}
@@ -42,12 +76,11 @@ class Pronteff extends Component {
             {/* submit button ends */}
             <br />
             {/* Input div Ends */}
-                    <FaFacebookF
-                        
+            <FaFacebookF
               style={{
-                height: "50px",
+                height: "40px",
                 width: "100px",
-                
+
                 backgroundColor: "#295B98",
                 color: "white",
                 borderRadius: "4px",
@@ -56,7 +89,7 @@ class Pronteff extends Component {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <IoLogoTwitter
               style={{
-                height: "50px",
+                height: "40px",
                 width: "100px",
                 backgroundColor: "#00AEEF",
                 color: "white",
@@ -65,7 +98,7 @@ class Pronteff extends Component {
             />
             <br />
             {/* forget password link */}
-            <a href="https://www.pronteff.com/">Lost Your Password?</a>
+            <a href="https://www.pronteff.com/" target="_blank~">Lost Your Password?</a>
             {/* forget password link */}
           </div>
         </form>

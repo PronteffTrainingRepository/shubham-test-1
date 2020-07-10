@@ -1,0 +1,41 @@
+.loginform {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  background-color: #437082;
+  border-radius: 5px;
+  margin-top: 60px;
+}
+a {
+  text-decoration: none;
+  opacity: 0.8;
+}
+.b1 {
+  border-width: 0 0 2px !important;
+}
+.logo {
+  background: url(./images/plogo.png);
+  background-size: contain;
+  background-position: top;
+  background: cover;
+  height: 120px;
+  width: 190px;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+}
+input[type="text"],
+input[type="password"] {
+  outline: 0;
+  border-width: 0 0 2px !important;
+  border-color: #358d9c;
+  background-color: transparent !important;
+  opacity: 0.9;
+  color: #ffffff;
+}
+.i1 {
+  background-color: #437082;
+}

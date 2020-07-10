@@ -1,5 +1,5 @@
 import React, { Component } from "react";//importing React from react and component class
-import "./Registration.css";  //importing external css file
+//import "./Registration.css";  //importing external css file
 
 export class Registration extends Component {
   //Constructor starts
