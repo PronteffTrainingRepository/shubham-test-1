@@ -101,7 +101,6 @@ class Pronteff2 extends Component {
           {/* Logo Start */}
           <div className="logo mb-3"></div>
           {/* Logo End */}
-
           <InputGroup className="mb-3">
             <InputGroupAddon addonType="prepend">
               <InputGroupText
@@ -109,6 +108,7 @@ class Pronteff2 extends Component {
                   backgroundColor: "#437082",
                   borderColor: "#437082 #437082 #358d9c #437082",
                   borderWidth: "1.8px",
+                  borderRadius: "0px",
                 }}
               >
                 <FaUserAlt></FaUserAlt>
@@ -135,6 +135,7 @@ class Pronteff2 extends Component {
                   backgroundColor: "#437082",
                   borderColor: "#437082 #437082 #358d9c #437082 ",
                   borderWidth: "1.8px",
+                  borderRadius: "0px",
                 }}
               >
                 <FaLock />
@@ -170,7 +171,6 @@ class Pronteff2 extends Component {
           />
           {/* Facebook Logo Ends */}
           <span className="p-2"></span>
-
           {/* Twitter Logo Starts */}
           <IoLogoTwitter
             className="mt-2 mb-3"
@@ -183,13 +183,9 @@ class Pronteff2 extends Component {
             }}
           />
           {/* Twitter Logo Ends */}
-
           {/* Lost Password Starts */}
           <div className="text-center">
-            <a
-              href="https://www.google.com/search?rlz=1C1CHBF_enIN892IN892&ei=sToIX5_FOuaf4-EPo9OvyAs&q=pronteff+it+solutions+&oq=pronteff+it+solutions+&gs_lcp=CgZwc3ktYWIQAzILCC4QxwEQrwEQkwIyAggAMgYIABAWEB4yAggmUOgTWK4fYNQhaABwAHgAgAF-iAGBBpIBAzIuNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjf4feMtcLqAhXmzzgGHaPpC7kQ4dUDCAw&uact=5"
-              style={{ color: "whitesmoke" }}
-            >
+            <a href="https://www.pronteff.com/" style={{ color: "whitesmoke" }}>
               Lost Your Password?
             </a>
           </div>

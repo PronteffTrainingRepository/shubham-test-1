@@ -1,20 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Login from './components/Login'
-import Ex from './components/Ex';
-import Registration from './components/Registration';
-//import Pronteff from './components/Pronteff';
-import Pronteff2 from './components/Pronteff2';
+import React, { Component } from "react";
+import "./App.css";
+import Menu from "./components/Menu";
+import About from "./components/About";
+import Home from "./components/Home";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Error from './components/Error';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Login></Login> */}
-      {/* <Registration/> */}
-       <Pronteff2/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Menu />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" render={() =><About name="AboutUS" />} />
+          <Route path="/contact" component={Contact} />
+          <Route component={Error} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
+
+const Contact = () => {
+  return (
+    <div className="Homestyle">
+      <h2>Welcome to ContactUs Page.</h2>
+    </div>
+  );
+};
 
 export default App;

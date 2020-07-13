@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Menustyle {
+  width: 100%;
+  height: 100px;
+  background: #6ab04c;
+  color: white;
+}
+
+.Menustyle ul {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Menustyle ul li {
+  list-style: none;
+  text-transform: uppercase;
+  color: white;
+  outline-style: solid;
+  outline-color: white;
+  border-color: #6ab04c;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 36px 184px;
+}
+.Menustyle ul li a {
+  color: white;
+  text-decoration: none;
+}
