@@ -5,10 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter } from 'react-router-dom';
+import NewEmployee from './components/Views/Pronteff/Employee'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <NewEmployee />
       </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

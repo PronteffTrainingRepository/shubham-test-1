@@ -1,7 +1,6 @@
-.Contactchild{
+.Contactchild li{
     color: #213f42;
     text-align: right;
     text-decoration: none;
-    
-
+     list-style: none;
 }
